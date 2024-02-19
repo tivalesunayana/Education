@@ -9,37 +9,17 @@ export default function Home() {
 
 
     return (
-        <div className='px-2 mx-5 px-4 py-3'>
+        <div className='  '>
             <div>
 
 
-                <div className='flex'>
+                <div className='flex  '>
                     <div className=' py-40'>
-                        <h2 className='text-orange-600'>Hello,I'm</h2>
-                        <h1 className='py-3 font-semibold'>James Smith</h1>
-                        <h5>
-                            A <span className="text-green-600">Creative Designer</span> From{' '}
-                            <span className="text-purple-600">New York</span>
-                        </h5>
-                        <h1 className='py-2 font-light'>I'm creative designer based in New York ,and Im'very passionate and dedicated to my work</h1>
-                        <div className='flex items-center space-x-4'>
-                            <button className='text-white bg-orange-600 rounded-3xl px-3 py-2 w-20'>Ask Me</button>
-                            <img
-                                src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-icon.svg"
-                                alt="key"
-                                className="mr-2 w-8 h-8 px-1 py-1 rounded-full"
-                            />
-                            <img
-                                src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/whatsapp-icon.svg"
-                                alt="key"
-                                className="mr-2 w-8 h-8 px-1 py-1 rounded-full"
-                            />
-                            <img
-                                src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-square-icon.svg"
-                                alt="key"
-                                className="mr-2 w-8 h-8 px-1 py-1 rounded-full"
-                            />
-                        </div>
+
+                        <h1 className="text-red-400 text-6xl space-y-8 " style={{ textShadow: '0px 4px 6.3px rgba(0, 0, 0, 0.25)' }} >Unlock Your</h1>
+                        <h1 className='text-6xl py-3 text-purple-500 text-shadow-md' style={{ textShadow: '0px 4px 6.3px rgba(0, 0, 0, 0.25)' }}> Future</h1>
+                        <h1 className='text-gray-500'>Expert College Counseling Services</h1>
+
                     </div>
                     <div>
                         {/* <img
@@ -50,12 +30,29 @@ export default function Home() {
                         <img
                             src={twitterIcon}
                             alt="Twitter"
-                            className="absolute bottom-0 right-0 w-100 h-80 px-8 py-8 rounded-full"
+                            className="absolute bottom-0 right-0 w-100 h-80 px-8 py-8 rounded-full pr-60"
                         />
 
                     </div>
+
                 </div>
+
             </div>
+            <div className=" opacity-4 fixed top-20 left-8 bottom-40 blur-md
+            flex items-start justify-start rounded-full bg-gradient-to-br bg-pink-500 overflow-hidden shadow-lg" style={{ height: '100px', width: '100px' }}>
+
+
+            </div>
+            <div className="pl-0 top- opacity-4 fixed blur-md 
+            flex items-start justify-start rounded-full bg-gradient-to-br bg-blue-500 overflow-hidden shadow-lg" style={{ height: '400px', width: '400px' }}>
+
+
+            </div>
+
+
+
+
         </div>
+
     );
 }

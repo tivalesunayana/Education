@@ -51,6 +51,12 @@ export default function SignIn() {
                 <div className="w-full md:w-[67%] lg:w-[40%] lg:ml-20">
 
                     <form onSubmit={onSubmit}>
+
+                        <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+                            Save changes
+                        </button>
+
+
                         <div className="flex justify-between mb-6">
                             <label className="inline-flex items-center">
                                 <input
