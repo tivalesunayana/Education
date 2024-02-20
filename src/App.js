@@ -77,6 +77,7 @@ import Home from './components/Home';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import ForgotPassword from './components/ForgotPassword';
+import CareerGuidance from './components/CareerGuidance';
 
 function App() {
   return (
@@ -93,9 +94,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/service" element={<Service />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<SignUp />} />
 
+          <Route path="/contact" element={<SignUp />} />
+          <Route path="/career" element={<CareerGuidance />} />
 
         </Routes>
       </Router>

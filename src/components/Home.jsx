@@ -9,7 +9,7 @@ export default function Home() {
 
 
     return (
-        <div className='  '>
+        <div className=' m-8 '>
             <div>
 
 
@@ -38,19 +38,38 @@ export default function Home() {
                 </div>
 
             </div>
-            <div className=" opacity-4 fixed top-20 left-8 bottom-40 blur-md
+            <div className=" opacity-2 fixed top-20 left-8 bottom-40 blur-2xl
             flex items-start justify-start rounded-full bg-gradient-to-br bg-pink-500 overflow-hidden shadow-lg" style={{ height: '100px', width: '100px' }}>
 
 
             </div>
-            <div className="pl-0 top- opacity-4 fixed blur-md 
-            flex items-start justify-start rounded-full bg-gradient-to-br bg-blue-500 overflow-hidden shadow-lg" style={{ height: '400px', width: '400px' }}>
+            {/* <div className="fixed  bottom-0 blur-md left-0 flex items-start justify-start rounded-full bg-gradient-to-br bg-blue-500 overflow-hidden shadow-lg" style={{ height: '200px', width: '200px' }}>
 
+            </div> */}
 
+            <div className="fixed left-0 bottom-0 blur-xl  flex items-end justify-end rounded-full bg-gradient-to-br bg-blue-500 overflow-hidden shadow-lg" style={{ height: '100px', width: '100px' }}>
+
+            </div>
+            <div className="blur-2xl fixed top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 flex items-start justify-start rounded-full bg-gradient-to-br bg-purple-400 overflow-hidden shadow-lg" style={{ height: '100px', width: '100px', left: '33%' }}>
+                {/* Content */}
             </div>
 
 
+            <div>
 
+                <div className="fixed left-0 bottom-0 blur-3xl  flex items-end justify-end rounded-full bg-gradient-to-br bg-blue-600 overflow-hidden shadow-lg" style={{ height: '100px', width: '100px' }}>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <div className="fixed right-1/4 bottom-10 top-36 right-6 border-l-white-900 blur-2xl  flex items-end justify-end rounded-full bg-gradient-to-br bg-yellow-300 overflow-hidden shadow-lg" style={{ height: '200px', width: '200px' }}>
+
+                </div>
+
+            </div>
 
         </div>
 
