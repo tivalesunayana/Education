@@ -65,7 +65,7 @@
 
 // export default App;
 
-import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation, } from 'react-router-dom'
 
 import './App.css';
 import About from './components/About';
@@ -78,6 +78,7 @@ import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import ForgotPassword from './components/ForgotPassword';
 import CareerGuidance from './components/CareerGuidance';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -99,9 +100,18 @@ function App() {
           <Route path="/career" element={<CareerGuidance />} />
 
         </Routes>
+        <FooterOnAbout />
       </Router>
     </div>
   )
 }
 
+
+function FooterOnAbout() {
+  let location = useLocation();
+  if (location.pathname === '/about') {
+    return <Footer />;
+  }
+  return null;
+}
 export default App;

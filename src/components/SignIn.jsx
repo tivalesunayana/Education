@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import OAuth from "../components/OAuth";
 import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 import { toast } from "react-toastify";
-
+import book from '../book.png'
 export default function SignIn() {
     const [showPassword, setShowPassword] = useState(false);
     const [formData, setFormData] = useState({
@@ -37,14 +37,14 @@ export default function SignIn() {
         }
     }
     return (
-        <section>
-            <h1 className="text-3xl text-center mt-6 font-bold">Sign In</h1>
-            <div className="flex justify-center flex-wrap items-center px-6 py-12 max-w-6xl mx-auto">
+        <section >
+            <h1 className="text-3xl text-center  font-bold text-blue-500">Sign In</h1>
+            <div className="flex justify-center flex-wrap items-center  max-w-6xl mx-auto">
                 <div className="md:w-[67%] lg:w-[50%] mb-12 md:mb-6">
                     <img
-                        src="https://images.unsplash.com/flagged/photo-1564767609342-620cb19b2357?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src={book}
                         alt="key"
-                        className="w-full rounded-2xl"
+                        className="justify-items-start w-full rounded-2xl"
                     />
                 </div>
 
@@ -52,9 +52,6 @@ export default function SignIn() {
 
                     <form onSubmit={onSubmit}>
 
-                        <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
-                            Save changes
-                        </button>
 
 
                         <div className="flex justify-between mb-6">
@@ -139,6 +136,28 @@ export default function SignIn() {
                         <OAuth />
                     </form>
                 </div>
+            </div>
+            <div>
+
+                <div className="fixed right-1/4 bottom-10 top-36 right-6 border-l-white-900 blur-2xl  flex items-end justify-end rounded-full bg-gradient-to-br bg-yellow-300 overflow-hidden shadow-lg" style={{ height: '200px', width: '200px' }}>
+
+                </div>
+
+            </div>
+            <div className="fixed left-0 bottom-0 blur-xl  flex items-end justify-end rounded-full bg-gradient-to-br bg-blue-500 overflow-hidden shadow-lg" style={{ height: '100px', width: '100px' }}>
+
+            </div>
+            <div className="blur-2xl fixed top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 flex items-start justify-start rounded-full bg-gradient-to-br bg-purple-400 overflow-hidden shadow-lg" style={{ height: '100px', width: '100px', left: '33%' }}>
+                {/* Content */}
+            </div>
+
+
+            <div>
+
+                <div className="fixed left-0 bottom-0 blur-3xl  flex items-end justify-end rounded-full bg-gradient-to-br bg-blue-600 overflow-hidden shadow-lg" style={{ height: '100px', width: '100px' }}>
+
+                </div>
+
             </div>
         </section>
     );
