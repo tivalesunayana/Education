@@ -79,7 +79,9 @@ import SignIn from './components/SignIn';
 import ForgotPassword from './components/ForgotPassword';
 import CareerGuidance from './components/CareerGuidance';
 import Footer from './components/Footer';
-
+import { ToastContainer } from "react-toastify";
+import Try from "./components/try"
+import Student from "./components/Student"
 function App() {
   return (
     <div>
@@ -89,19 +91,34 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/contact" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/service" element={<Service />} />
 
-          <Route path="/contact" element={<SignUp />} />
+          <Route path="/sign-in" element={<SignUp />} />
           <Route path="/career" element={<CareerGuidance />} />
+          <Route path="/student" element={<Student />} />
+
+          <Route path="/try" element={<Try />} />
 
         </Routes>
         <FooterOnAbout />
       </Router>
+      {/* <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      /> */}
     </div>
   )
 }

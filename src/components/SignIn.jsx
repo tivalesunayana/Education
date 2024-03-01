@@ -38,13 +38,14 @@ export default function SignIn() {
     }
     return (
         <section >
-            <h1 className="text-3xl text-center  font-bold text-blue-500">Sign In</h1>
+            <h1 className="text-3xl text-center  font-bold mb-20 text-red-400">Sign In</h1>
             <div className="flex justify-center flex-wrap items-center  max-w-6xl mx-auto">
-                <div className="md:w-[67%] lg:w-[50%] mb-12 md:mb-6">
+                <div className="relative">
                     <img
                         src={book}
                         alt="key"
-                        className="justify-items-start w-full rounded-2xl"
+                        className="w-441px h-445px rounded-2xl"
+                        style={{ width: "441px", height: "445px" }}
                     />
                 </div>
 
@@ -54,8 +55,8 @@ export default function SignIn() {
 
 
 
-                        <div className="flex justify-between mb-6">
-                            <label className="inline-flex items-center">
+                        <div className=" justify-between mb-8 ">
+                            <label className=" ">
                                 <input
                                     type="radio"
                                     value="student"
@@ -63,9 +64,9 @@ export default function SignIn() {
                                     className="mr-2"
                                     name="userRole"
                                 />
-                                <span className="text-lg">As a Student</span>
+                                <span className="text-lg mr-7  px-7 py-3 bg-blue-500 rounded-full text-white">Student</span>
                             </label>
-                            <label className="inline-flex items-center">
+                            <label className="">
                                 <input
                                     type="radio"
                                     value="counselor"
@@ -73,8 +74,30 @@ export default function SignIn() {
                                     className="mr-2"
                                     name="userRole"
                                 />
-                                <span className="text-lg">Log in as Counselor</span>
+                                <span className="text-lg px-7 py-3 w-full  bg-blue-500 rounded-full text-white">Recruiter</span>
                             </label>
+                            <div className=" "> <label className="inline-flex items-center">
+                                <input
+                                    type="radio"
+                                    value="student"
+                                    onChange={() => console.log("student clicked")}
+                                    className="mr-2"
+                                    name="userRole"
+                                />
+                                <span className="text-lg m-4 ml-0 px-6 py-2 bg-blue-500 rounded-full text-white">Counsellor</span>
+                            </label>
+                                <label className="">
+                                    <input
+                                        type="radio"
+                                        value="counselor"
+                                        onChange={() => console.log("counselor clicked")}
+                                        className="mr-2"
+                                        name="userRole"
+                                    />
+                                    <span className="text-lg px-7 py-3 w-full bg-blue-500 rounded-full text-white">Job Seeker</span>
+                                </label>
+                            </div>
+
                         </div>
                         <input
                             type="email"
