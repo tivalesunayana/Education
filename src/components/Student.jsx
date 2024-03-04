@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Select from 'react-select'
 import countryList from 'react-select-country-list'
 import axios from 'axios'; // Import Axios
+import { useNavigate } from "react-router-dom";
 
 import {
     CitySelect,
@@ -38,6 +39,7 @@ const Student = () => {
             english: false,
         },
     });
+    const navigate = useNavigate();
 
 
     const handleSubmit = async (e) => {
@@ -51,6 +53,7 @@ const Student = () => {
 
             });
             console.log(response.data); // Handle success response
+            navigate("/");
         } catch (error) {
             console.error('Error:', error.response.data); // Handle error response
         }

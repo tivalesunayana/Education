@@ -38,7 +38,7 @@ export default function SignIn() {
     }
     return (
         <section >
-            <h1 className="text-3xl text-center  font-bold mb-20 text-red-400">Sign In</h1>
+            <h1 className="text-3xl text-center  font-bold mb-0 text-red-400">Sign In</h1>
             <div className="flex justify-center flex-wrap items-center  max-w-6xl mx-auto">
                 <div className="relative">
                     <img
@@ -56,7 +56,7 @@ export default function SignIn() {
 
 
                         <div className=" justify-between mb-8 ">
-                            <label className=" ">
+                            {/* <label className=" ">
                                 <input
                                     type="radio"
                                     value="student"
@@ -75,8 +75,8 @@ export default function SignIn() {
                                     name="userRole"
                                 />
                                 <span className="text-lg px-7 py-3 w-full  bg-blue-500 rounded-full text-white">Recruiter</span>
-                            </label>
-                            <div className=" "> <label className="inline-flex items-center">
+                            </label> */}
+                            {/* <div className=" "> <label className="inline-flex items-center">
                                 <input
                                     type="radio"
                                     value="student"
@@ -96,7 +96,7 @@ export default function SignIn() {
                                     />
                                     <span className="text-lg px-7 py-3 w-full bg-blue-500 rounded-full text-white">Job Seeker</span>
                                 </label>
-                            </div>
+                            </div> */}
 
                         </div>
                         <input
